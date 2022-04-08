@@ -59,11 +59,13 @@ public class ReceiptController {
     static class ReceiptEntryResponse {
         private String name;
         private int quantity;
+        private BigDecimal totalPrice;
 
         static ReceiptEntryResponse fromReceiptEntry(ReceiptEntry receiptEntry){
             return ReceiptEntryResponse.builder()
                     .name(receiptEntry.product().name())
                     .quantity(receiptEntry.quantity())
+                    .totalPrice(receiptEntry.totalPrice())
                     .build();
         }
     }
