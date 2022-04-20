@@ -3,7 +3,7 @@
 * http://localhost:8080/receipt - endpoint
 
 ### Request body (example)
-```
+```json
 {
     "basket":
      [
@@ -30,7 +30,7 @@
 ```
 
 ### Response (Receipt)
-```
+```json
 {
     "products": [
         {
